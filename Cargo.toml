@@ -1,5 +1,5 @@
 [package]
-name = "percolation-simulation"
+name = "infection-sim"
 version = "0.1.0"
 authors = ["Caleb"]
 edition = "2018"

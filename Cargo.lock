@@ -808,6 +808,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "infection-sim"
+version = "0.1.0"
+dependencies = [
+ "nalgebra",
+ "nannou",
+]
+
+[[package]]
 name = "inflate"
 version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1483,14 +1491,6 @@ name = "percent-encoding"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4fd5641d01c8f18a23da7b6fe29298ff4b55afcccdf78973b24cf3175fee32e"
-
-[[package]]
-name = "percolation-simulation"
-version = "0.1.0"
-dependencies = [
- "nalgebra",
- "nannou",
-]
 
 [[package]]
 name = "petgraph"
