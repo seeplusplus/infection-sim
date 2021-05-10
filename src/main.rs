@@ -57,13 +57,11 @@ fn update(_app: &App, _model: &mut Model, update: Update) {
     let mut temp_queue: HashSet<u32> = HashSet::new();
     for i in 0..(NODES-1) {
         for j in (i+1)..(NODES) {
-            if _model.adjacency_matrix[(i as usize, j as usize)] > 0.0
+            if _model.adjacency_matrix[(i as usize, j as usize)] > 0.0 && 
+            _model.infected.contains(&i) || _model.infected.contains(&j)
             {
-                if _model.infected.contains(&i) || _model.infected.contains(&j)
-                {
-                    temp_queue.insert(i);
-                    temp_queue.insert(j);
-                }
+                temp_queue.insert(i);
+                temp_queue.insert(j);
             }
         }
     }
